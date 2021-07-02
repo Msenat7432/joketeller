@@ -1,0 +1,23 @@
+html{
+
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+   background:violet;
+}
+
+.container {
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    background:url(/images/jerry.webp);
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position: center;  */
+
+}
