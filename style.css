@@ -5,7 +5,7 @@ html{
 
 body{
     margin:0;
-   background:violet;
+    background-color:mediumslateblue;
 }
 
 .container {
@@ -15,9 +15,21 @@ body{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-    background:url(/images/jerry.webp);
+     background:url('/images/jerry.webp');
+     background-size: 100%;
+     background-position: center;
      background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-position: center;  */
 
+}
+
+
+/* media  */
+
+
+@media  screen and (max-width: 1000px) {
+    .container {
+        background-position: center;
+         background-attachment: fixed;
+        background-size:cover;
+    }
 }
