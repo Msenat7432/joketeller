@@ -1,6 +1,3 @@
-const button = document.getElementById('button');
-const audioElement = document.getElementById('audio');
-
 // VoiceRSS Javascript SDK
 const VoiceRSS = {
 	speech(e) {
@@ -94,43 +91,3 @@ const VoiceRSS = {
 		throw 'The browser does not support HTTP request';
 	},
 };
-
-
-
-
-// function test(){
-//     VoiceRSS.speech({
-// 			key: '6aecdf8a3f42464c9443e21445eed97e',
-// 			src: 'Hello, world!',
-// 			hl: 'en-us',
-// 			v: 'Linda',
-// 			r: 0,
-// 			c: 'mp3',
-// 			f: '44khz_16bit_stereo',
-// 			ssml: false,
-// 		});
-// }
-// test()
-
-// Jokes
-
-async function getJokes(){
-    let joke = ''
-    const apiURL =
-			'https://v2.jokeapi.dev/joke/Programming,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
-    try{
-      const response = await fetch(apiURL);
-      const data = await response.json();
-      if (data.setup){
-          joke = `${data.setup} ... ${data.delivery}`;
-
-      }else{
-          joke = data.joke;
-      }
-      console.log(joke);
-    }catch (error){
-      console.log('whoops')
-    }
-}
-
-getJokes()

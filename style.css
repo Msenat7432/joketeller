@@ -5,7 +5,7 @@ html{
 
 body{
     margin:0;
-    background-color:mediumslateblue;
+    background-color:white
 }
 
 .container {
@@ -15,13 +15,43 @@ body{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     background:url('/images/jerry.webp');
+     background:url('/images/robot.webp');
      background-size: 100%;
-     background-position: center;
+     background-position:center;
      background-repeat: no-repeat;
+     border:none;
+     border-radius: 5px;
+     box-shadow:2px 2px 20px 10px rgba(0,0,0,0.2) ;
 
 }
 
+button {
+   
+     cursor: pointer;
+     outline: none;
+     width: 200px;
+     height: 50px;
+     margin-top: 20%;
+     font-family:'Courier New', Courier, monospace ;
+     font-size: 20px;
+     color: yellow ;
+     background-color: orange;
+     
+   }
+   
+
+   button:hover{
+       filter: brightness(90%)
+   }
+
+   button:active{
+       transform:  scale(0.98);
+   }
+
+   button:disabled{
+       cursor: default;
+       filter: brightness(30%);
+   }
 
 /* media  */
 
@@ -30,6 +60,11 @@ body{
     .container {
         background-position: center;
          background-attachment: fixed;
-        background-size:cover;
+        /* background-size:cover; */
+    }
+
+    button{
+        box-shadow: 2px 2px 20px 10px rgba(0,0,0, 0.2);
+
     }
 }
